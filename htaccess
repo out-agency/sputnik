@@ -1,0 +1,42 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page13212921.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^blog$ page13357860.html [NC]
+RewriteRule ^blog/$ page13357860.html [NC]
+
+RewriteRule ^header$ page13212970.html [NC]
+RewriteRule ^header/$ page13212970.html [NC]
+
+RewriteRule ^homestaging$ page13325363.html [NC]
+RewriteRule ^homestaging/$ page13325363.html [NC]
+
+RewriteRule ^plus-minus-real-estate-platforms$ page13332707.html [NC]
+RewriteRule ^plus-minus-real-estate-platforms/$ page13332707.html [NC]
+
+RewriteRule ^sputnik_cennosti$ page13332713.html [NC]
+RewriteRule ^sputnik_cennosti/$ page13332713.html [NC]
+
+RewriteRule ^footer$ page13330557.html [NC]
+RewriteRule ^footer/$ page13330557.html [NC]
+
+RewriteRule ^policy$ page13415594.html [NC]
+RewriteRule ^policy/$ page13415594.html [NC]
+
+RewriteRule ^komfortniy-pereezd$ page13546604.html [NC]
+RewriteRule ^komfortniy-pereezd/$ page13546604.html [NC]
+
+RewriteRule ^kogo-my-ischem$ page13550700.html [NC]
+RewriteRule ^kogo-my-ischem/$ page13550700.html [NC]
+
+RewriteRule ^kak-sostavit-reklamnoe-obiavleniya$ page13551322.html [NC]
+RewriteRule ^kak-sostavit-reklamnoe-obiavleniya/$ page13551322.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3330-3932-4131-b730-356363303732/favicon.ico [R=302,L]
+
